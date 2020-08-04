@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jez-dz-60j">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="nN7-wz-JYi">
+            <objects>
+                <viewController storyboardIdentifier="search" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jez-dz-60j" customClass="SearchBar" customModule="foodDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tMq-Xr-Quc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" showsSearchResultsButton="YES" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n6m-5u-iqs">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="jez-dz-60j" id="urz-1N-yex"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="n6m-5u-iqs" firstAttribute="top" secondItem="SUw-D2-0Ka" secondAttribute="top" id="9wO-E1-4L8"/>
+                            <constraint firstItem="n6m-5u-iqs" firstAttribute="trailing" secondItem="SUw-D2-0Ka" secondAttribute="trailing" id="Cbe-ib-Pk4"/>
+                            <constraint firstItem="n6m-5u-iqs" firstAttribute="trailing" secondItem="SUw-D2-0Ka" secondAttribute="trailing" id="Jd3-iO-emR"/>
+                            <constraint firstItem="n6m-5u-iqs" firstAttribute="leading" secondItem="SUw-D2-0Ka" secondAttribute="leading" id="XUo-CW-Jjh"/>
+                            <constraint firstItem="n6m-5u-iqs" firstAttribute="leading" secondItem="SUw-D2-0Ka" secondAttribute="leading" id="Xld-Om-V4V"/>
+                            <constraint firstItem="n6m-5u-iqs" firstAttribute="top" secondItem="SUw-D2-0Ka" secondAttribute="top" id="dQn-3q-rkj"/>
+                            <constraint firstItem="n6m-5u-iqs" firstAttribute="top" secondItem="SUw-D2-0Ka" secondAttribute="top" id="iEz-ET-wlY"/>
+                            <constraint firstItem="n6m-5u-iqs" firstAttribute="trailing" secondItem="SUw-D2-0Ka" secondAttribute="trailing" id="lvy-fW-1ld"/>
+                            <constraint firstItem="n6m-5u-iqs" firstAttribute="leading" secondItem="SUw-D2-0Ka" secondAttribute="leading" id="o6e-WH-7bi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SUw-D2-0Ka"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="Da4-W0-GMo"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="SearchBar" destination="n6m-5u-iqs" id="O7E-9d-EVm"/>
+                        <segue destination="5Nw-cv-y9A" kind="show" identifier="search" id="ZnU-Gh-u0c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OU6-Mh-Vkf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="115.84821428571428"/>
+        </scene>
+        <!--Nutri-->
+        <scene sceneID="0NH-73-khq">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Nutri" storyboardName="Nutri" id="5Nw-cv-y9A" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jZE-As-Ifz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W2V-sO-p0Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+    </resources>
+</document>

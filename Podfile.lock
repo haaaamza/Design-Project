@@ -1,0 +1,16 @@
+PODS:
+  - RKCameraButton (0.0.1)
+
+DEPENDENCIES:
+  - RKCameraButton
+
+SPEC REPOS:
+  trunk:
+    - RKCameraButton
+
+SPEC CHECKSUMS:
+  RKCameraButton: 269c436f8003a09b1066cd22bc65ca943f2c67b3
+
+PODFILE CHECKSUM: 48771b13dad241c2352b740f3aed187e64110add
+
+COCOAPODS: 1.9.1

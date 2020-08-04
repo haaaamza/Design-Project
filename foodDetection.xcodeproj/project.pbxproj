@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB426F8B242E59D8003ECB2D /* Carb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB426F8A242E59D8003ECB2D /* Carb.storyboard */; };
+		BB426F8D242E5A05003ECB2D /* CamNut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB426F8C242E5A04003ECB2D /* CamNut.storyboard */; };
+		BB426F8F242E5E4F003ECB2D /* Nutri.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB426F8E242E5E4F003ECB2D /* Nutri.storyboard */; };
+		BB426F91242E5F64003ECB2D /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB426F90242E5F64003ECB2D /* Search.storyboard */; };
+		BB918A6B245DF9C200606F3C /* yolo-obj_20000_scaled.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BB918A68245DF9C100606F3C /* yolo-obj_20000_scaled.mlmodel */; };
+		BB918A6C245DF9C200606F3C /* YOLO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB918A69245DF9C200606F3C /* YOLO.swift */; };
+		BB918A7A245E02C900606F3C /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB918A77245E02C900606F3C /* BoundingBox.swift */; };
+		BB918A7B245E02C900606F3C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB918A78245E02C900606F3C /* Helpers.swift */; };
+		BB918A7D245E053000606F3C /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB918A79245E02C900606F3C /* VideoCapture.swift */; };
+		BBC41E60242E3479005BD7AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7C348152399AABA009FE689 /* Assets.xcassets */; };
+		BBCD020D243910AF009FAE20 /* searchbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCD020C243910AF009FAE20 /* searchbar.swift */; };
+		BBCD020F2443649D009FAE20 /* CarbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCD020E2443649D009FAE20 /* CarbViewController.swift */; };
+		BBCD02112443C257009FAE20 /* FoodVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCD02102443C257009FAE20 /* FoodVariables.swift */; };
+		BBCD02132444FEA2009FAE20 /* CarbsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCD02122444FEA2009FAE20 /* CarbsTableViewCell.swift */; };
+		BBCD022C244575F6009FAE20 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCD022B244575F6009FAE20 /* RoundButton.swift */; };
+		BBCD022F24461A48009FAE20 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBCD022E24461A48009FAE20 /* HealthKit.framework */; };
+		BBCD023124461AB4009FAE20 /* HealthKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBCD023024461AB4009FAE20 /* HealthKit.storyboard */; };
+		BBCD023324461F55009FAE20 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCD023224461F54009FAE20 /* HealthViewController.swift */; };
+		F7C3480A2399AAB9009FE689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C348092399AAB9009FE689 /* AppDelegate.swift */; };
+		F7C3480C2399AAB9009FE689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C3480B2399AAB9009FE689 /* SceneDelegate.swift */; };
+		F7C3480E2399AAB9009FE689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C3480D2399AAB9009FE689 /* ViewController.swift */; };
+		F7C348112399AAB9009FE689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C3480F2399AAB9009FE689 /* Main.storyboard */; };
+		F7C348142399AAB9009FE689 /* foodDetection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7C348122399AAB9009FE689 /* foodDetection.xcdatamodeld */; };
+		F7C348192399AABA009FE689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C348172399AABA009FE689 /* LaunchScreen.storyboard */; };
+		F7C348212399AD49009FE689 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C348202399AD49009FE689 /* TableViewController.swift */; };
+		F7C348232399D9B0009FE689 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C348222399D9B0009FE689 /* Nutrition.swift */; };
+		F7C348252399D9EB009FE689 /* NutritionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C348242399D9EB009FE689 /* NutritionRequest.swift */; };
+		F7C34827239A28AD009FE689 /* foodClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F7C34826239A28AD009FE689 /* foodClassifier.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB426F8A242E59D8003ECB2D /* Carb.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Carb.storyboard; sourceTree = "<group>"; };
+		BB426F8C242E5A04003ECB2D /* CamNut.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CamNut.storyboard; sourceTree = "<group>"; };
+		BB426F8E242E5E4F003ECB2D /* Nutri.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Nutri.storyboard; sourceTree = "<group>"; };
+		BB426F90242E5F64003ECB2D /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		BB918A68245DF9C100606F3C /* yolo-obj_20000_scaled.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "yolo-obj_20000_scaled.mlmodel"; sourceTree = "<group>"; };
+		BB918A69245DF9C200606F3C /* YOLO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YOLO.swift; sourceTree = "<group>"; };
+		BB918A77245E02C900606F3C /* BoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoundingBox.swift; path = Helpers/BoundingBox.swift; sourceTree = "<group>"; };
+		BB918A78245E02C900606F3C /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Helpers/Helpers.swift; sourceTree = "<group>"; };
+		BB918A79245E02C900606F3C /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCapture.swift; path = Helpers/VideoCapture.swift; sourceTree = "<group>"; };
+		BBC41E44242E268A005BD7AB /* foodDetection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "foodDetection-Bridging-Header.h"; sourceTree = "<group>"; };
+		BBCD02022434DAB5009FAE20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		BBCD020C243910AF009FAE20 /* searchbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchbar.swift; sourceTree = "<group>"; };
+		BBCD020E2443649D009FAE20 /* CarbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbViewController.swift; sourceTree = "<group>"; };
+		BBCD02102443C257009FAE20 /* FoodVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodVariables.swift; sourceTree = "<group>"; };
+		BBCD02122444FEA2009FAE20 /* CarbsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbsTableViewCell.swift; sourceTree = "<group>"; };
+		BBCD021624456FD9009FAE20 /* RKCameraButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RKCameraButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBCD021A24457064009FAE20 /* RKCameraButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RKCameraButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBCD021E244572A2009FAE20 /* RKCameraButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RKCameraButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBCD0224244572F4009FAE20 /* RKCameraButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RKCameraButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBCD022B244575F6009FAE20 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		BBCD022D24461A48009FAE20 /* foodDetection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = foodDetection.entitlements; sourceTree = "<group>"; };
+		BBCD022E24461A48009FAE20 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		BBCD023024461AB4009FAE20 /* HealthKit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HealthKit.storyboard; sourceTree = "<group>"; };
+		BBCD023224461F54009FAE20 /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
+		F7C348062399AAB9009FE689 /* foodDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7C348092399AAB9009FE689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7C3480B2399AAB9009FE689 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F7C3480D2399AAB9009FE689 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7C348102399AAB9009FE689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7C348132399AAB9009FE689 /* foodDetection.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = foodDetection.xcdatamodel; sourceTree = "<group>"; };
+		F7C348152399AABA009FE689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7C348182399AABA009FE689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7C3481A2399AABA009FE689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7C348202399AD49009FE689 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F7C348222399D9B0009FE689 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
+		F7C348242399D9EB009FE689 /* NutritionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionRequest.swift; sourceTree = "<group>"; };
+		F7C34826239A28AD009FE689 /* foodClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = foodClassifier.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7C348032399AAB9009FE689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBCD022F24461A48009FAE20 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24E328C433D44B152DE71CD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBCD022E24461A48009FAE20 /* HealthKit.framework */,
+				BBCD0224244572F4009FAE20 /* RKCameraButton.framework */,
+				BBCD021E244572A2009FAE20 /* RKCameraButton.framework */,
+				BBCD021A24457064009FAE20 /* RKCameraButton.framework */,
+				BBCD021624456FD9009FAE20 /* RKCameraButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C3986DD1DE8562993BA3EE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB426F89242E59AF003ECB2D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BB426F8A242E59D8003ECB2D /* Carb.storyboard */,
+				BB426F8C242E5A04003ECB2D /* CamNut.storyboard */,
+				BB426F8E242E5E4F003ECB2D /* Nutri.storyboard */,
+				BB426F90242E5F64003ECB2D /* Search.storyboard */,
+				BBCD023024461AB4009FAE20 /* HealthKit.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F7C347FD2399AAB9009FE689 = {
+			isa = PBXGroup;
+			children = (
+				F7C348082399AAB9009FE689 /* foodDetection */,
+				F7C348072399AAB9009FE689 /* Products */,
+				7C3986DD1DE8562993BA3EE2 /* Pods */,
+				24E328C433D44B152DE71CD6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F7C348072399AAB9009FE689 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7C348062399AAB9009FE689 /* foodDetection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7C348082399AAB9009FE689 /* foodDetection */ = {
+			isa = PBXGroup;
+			children = (
+				BBCD022D24461A48009FAE20 /* foodDetection.entitlements */,
+				BB426F89242E59AF003ECB2D /* Storyboards */,
+				F7C348092399AAB9009FE689 /* AppDelegate.swift */,
+				F7C3480B2399AAB9009FE689 /* SceneDelegate.swift */,
+				F7C3480D2399AAB9009FE689 /* ViewController.swift */,
+				BB918A68245DF9C100606F3C /* yolo-obj_20000_scaled.mlmodel */,
+				BB918A77245E02C900606F3C /* BoundingBox.swift */,
+				BB918A78245E02C900606F3C /* Helpers.swift */,
+				BB918A79245E02C900606F3C /* VideoCapture.swift */,
+				BB918A69245DF9C200606F3C /* YOLO.swift */,
+				BBCD023224461F54009FAE20 /* HealthViewController.swift */,
+				BBCD020C243910AF009FAE20 /* searchbar.swift */,
+				F7C3480F2399AAB9009FE689 /* Main.storyboard */,
+				F7C34826239A28AD009FE689 /* foodClassifier.mlmodel */,
+				F7C348152399AABA009FE689 /* Assets.xcassets */,
+				F7C348172399AABA009FE689 /* LaunchScreen.storyboard */,
+				BBCD022B244575F6009FAE20 /* RoundButton.swift */,
+				F7C3481A2399AABA009FE689 /* Info.plist */,
+				F7C348122399AAB9009FE689 /* foodDetection.xcdatamodeld */,
+				F7C348202399AD49009FE689 /* TableViewController.swift */,
+				BBCD02102443C257009FAE20 /* FoodVariables.swift */,
+				BBCD02122444FEA2009FAE20 /* CarbsTableViewCell.swift */,
+				BBCD020E2443649D009FAE20 /* CarbViewController.swift */,
+				F7C348222399D9B0009FE689 /* Nutrition.swift */,
+				F7C348242399D9EB009FE689 /* NutritionRequest.swift */,
+				BBC41E44242E268A005BD7AB /* foodDetection-Bridging-Header.h */,
+			);
+			path = foodDetection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7C348052399AAB9009FE689 /* foodDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7C3481D2399AABA009FE689 /* Build configuration list for PBXNativeTarget "foodDetection" */;
+			buildPhases = (
+				F7C348022399AAB9009FE689 /* Sources */,
+				F7C348032399AAB9009FE689 /* Frameworks */,
+				F7C348042399AAB9009FE689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = foodDetection;
+			productName = foodDetection;
+			productReference = F7C348062399AAB9009FE689 /* foodDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7C347FE2399AAB9009FE689 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Qiang Xu";
+				TargetAttributes = {
+					F7C348052399AAB9009FE689 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = F7C348012399AAB9009FE689 /* Build configuration list for PBXProject "foodDetection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7C347FD2399AAB9009FE689;
+			productRefGroup = F7C348072399AAB9009FE689 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7C348052399AAB9009FE689 /* foodDetection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7C348042399AAB9009FE689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7C348192399AABA009FE689 /* LaunchScreen.storyboard in Resources */,
+				BBCD023124461AB4009FAE20 /* HealthKit.storyboard in Resources */,
+				BBC41E60242E3479005BD7AB /* Assets.xcassets in Resources */,
+				BB426F8D242E5A05003ECB2D /* CamNut.storyboard in Resources */,
+				BB426F8F242E5E4F003ECB2D /* Nutri.storyboard in Resources */,
+				BB426F91242E5F64003ECB2D /* Search.storyboard in Resources */,
+				BB426F8B242E59D8003ECB2D /* Carb.storyboard in Resources */,
+				F7C348112399AAB9009FE689 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7C348022399AAB9009FE689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7C3480E2399AAB9009FE689 /* ViewController.swift in Sources */,
+				F7C348142399AAB9009FE689 /* foodDetection.xcdatamodeld in Sources */,
+				F7C348232399D9B0009FE689 /* Nutrition.swift in Sources */,
+				F7C34827239A28AD009FE689 /* foodClassifier.mlmodel in Sources */,
+				BB918A6C245DF9C200606F3C /* YOLO.swift in Sources */,
+				BB918A7A245E02C900606F3C /* BoundingBox.swift in Sources */,
+				F7C3480A2399AAB9009FE689 /* AppDelegate.swift in Sources */,
+				BBCD02132444FEA2009FAE20 /* CarbsTableViewCell.swift in Sources */,
+				BBCD022C244575F6009FAE20 /* RoundButton.swift in Sources */,
+				F7C348212399AD49009FE689 /* TableViewController.swift in Sources */,
+				BBCD020D243910AF009FAE20 /* searchbar.swift in Sources */,
+				F7C3480C2399AAB9009FE689 /* SceneDelegate.swift in Sources */,
+				BBCD023324461F55009FAE20 /* HealthViewController.swift in Sources */,
+				BB918A7B245E02C900606F3C /* Helpers.swift in Sources */,
+				BBCD02112443C257009FAE20 /* FoodVariables.swift in Sources */,
+				BB918A6B245DF9C200606F3C /* yolo-obj_20000_scaled.mlmodel in Sources */,
+				BB918A7D245E053000606F3C /* VideoCapture.swift in Sources */,
+				BBCD020F2443649D009FAE20 /* CarbViewController.swift in Sources */,
+				F7C348252399D9EB009FE689 /* NutritionRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7C3480F2399AAB9009FE689 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7C348102399AAB9009FE689 /* Base */,
+				BBCD02022434DAB5009FAE20 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7C348172399AABA009FE689 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7C348182399AABA009FE689 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7C3481B2399AABA009FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7C3481C2399AABA009FE689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7C3481E2399AABA009FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = foodDetection/foodDetection.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TKHAUW39G6;
+				INFOPLIST_FILE = foodDetection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foodDetectionDP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "foodDetection/foodDetection-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7C3481F2399AABA009FE689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = foodDetection/foodDetection.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TKHAUW39G6;
+				INFOPLIST_FILE = foodDetection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foodDetectionDP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "foodDetection/foodDetection-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7C348012399AAB9009FE689 /* Build configuration list for PBXProject "foodDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7C3481B2399AABA009FE689 /* Debug */,
+				F7C3481C2399AABA009FE689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7C3481D2399AABA009FE689 /* Build configuration list for PBXNativeTarget "foodDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7C3481E2399AABA009FE689 /* Debug */,
+				F7C3481F2399AABA009FE689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7C348122399AAB9009FE689 /* foodDetection.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7C348132399AAB9009FE689 /* foodDetection.xcdatamodel */,
+			);
+			currentVersion = F7C348132399AAB9009FE689 /* foodDetection.xcdatamodel */;
+			path = foodDetection.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F7C347FE2399AAB9009FE689 /* Project object */;
+}

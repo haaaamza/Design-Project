@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../foodDetection/Helpers/BoundingBox.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../foodDetection/Helpers/Helpers.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../foodDetection/Helpers/VideoCapture.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>
